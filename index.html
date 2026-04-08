@@ -60,14 +60,6 @@ body {
   border-bottom: 1px dashed #999;
   background: transparent;
   font-size: 13px;
-  padding: 2px 0;
-  box-sizing: border-box;
-}
-  .info-box label {
-  font-weight: bold;
-  font-size: 13px;
-  display: block;
-  margin-bottom: 2px;
 }
 
 /* Tableau */
@@ -165,27 +157,19 @@ td input {
   </div>
   <br><br>
 
-  <!-- Infos Facture / Client -->
-<div class="info-section">
-  <!-- Infos client -->
-  <div class="info-box">
-    <label>Nom du client :</label>
-    <input type="text" placeholder="Nom du client">
-    <br><br>
-    <label>Adresse :</label>
-    <input type="text" placeholder="Adresse">
-  </div>
+  <div class="info-section">
+    <div class="info-box">
+      <strong>CLIENT :</strong><input type="text" id="clientName" placeholder="Nom du client">
+      <strong>ICE :</strong><input type="text" id="clientIce" placeholder="ICE du client">
+    </div>
+    <div class="info-box">
+  <label><strong>FACTURE N° :</strong></label>
+  <input type="text" id="numFact" placeholder="Entrez le numéro"><br><br>
 
-  <!-- Infos facture / date / ville / heure -->
-  <div class="info-box">
-    <label>Ville :</label>
-    <input type="text" placeholder="Entrez la ville">
-    <br><br>
-    <label>Date :</label>
-    <input type="text" placeholder="jj/mm/aaaa">
-    <br><br>
-    <label>Heure :</label>
-    <input type="text" placeholder="hh:mm">
+  <label><strong>Ville et date:</strong></label>
+  <input type="text" id="villeFact" placeholder="Entrez la ville"><br><br>
+
+</div>
   </div>
 
   <div class="table-container">
