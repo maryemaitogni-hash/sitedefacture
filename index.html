@@ -157,15 +157,27 @@ td input {
   </div>
   <br><br>
 
-  <div class="info-section">
-    <div class="info-box">
-      <strong>CLIENT :</strong><input type="text" id="clientName" placeholder="Nom du client">
-      <strong>ICE :</strong><input type="text" id="clientIce" placeholder="ICE du client">
-    </div>
-    <div class="info-box">
-      <strong>FACTURE N° :</strong><input type="text" id="numFact" placeholder="0000"><br>
-      <strong>VILLE / DATE :</strong><input type="text" id="dateFact" readonly>
-    </div>
+  <!-- Infos Facture / Client -->
+<div class="info-section">
+  <!-- Infos client -->
+  <div class="info-box">
+    <label>Nom du client :</label>
+    <input type="text" placeholder="Nom du client">
+    <br><br>
+    <label>Adresse :</label>
+    <input type="text" placeholder="Adresse">
+  </div>
+
+  <!-- Infos facture / date / ville / heure -->
+  <div class="info-box">
+    <label>Ville :</label>
+    <input type="text" placeholder="Entrez la ville">
+    <br><br>
+    <label>Date :</label>
+    <input type="text" placeholder="jj/mm/aaaa">
+    <br><br>
+    <label>Heure :</label>
+    <input type="text" placeholder="hh:mm">
   </div>
 
   <div class="table-container">
